@@ -1,5 +1,24 @@
 == SUE README
 
+Selenium Test Launches
+
+# unless a gemfile is used and bundled,
+# first install the following gems at the commandline:
+# gem install rubygems
+# gem install selenium-webdriver
+# gem install chromedriver-helper
+
+digitalglobe_browsetool_demo.rb:
+# This standalone program will enter coordinates
+# to the Digitalglobe imagefinder browsetool
+# and seek the display of Westminster, CO
+
+selenium_webdriver_demo.rb:
+# This standalone program will enter keywords
+# to a public search engine and seek the lat/long coordinates
+
+
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
