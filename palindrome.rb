@@ -1,4 +1,4 @@
-
+# discussed in 12/22/2015 interview with John
 class Palindrome
   def is_Palindrome(string)
     string.reverse == string
