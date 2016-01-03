@@ -14,7 +14,7 @@
 # element = driver.find_element(:name, 'signup[company]')
 # element = driver.find_element(:id, 'signup_company')
 
-# Future Mod Fix: asking user for a letter to use results in a stale entry error
+# Future Mod Fixed: asking user for a letter to use resulted in a stale entry error
 # puts 'Please enter a letter to use in the submission'
 # letter_entry = gets.chomp
 # puts 'Thank you.'

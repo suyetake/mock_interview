@@ -1,4 +1,5 @@
 #!/usr/bin/env ruby
+require 'rubygems'
 require 'selenium-webdriver'
 
 # This standalone program will navigate to Recurly's
@@ -15,10 +16,6 @@ require 'selenium-webdriver'
 # element = driver.find_element(:name, 'signup[company]')
 # element = driver.find_element(:id, 'signup_company')
 
-# Future Mod Fix: asking user for a letter to use results in a stale entry error
-# puts 'Please enter a letter to use in the submission'
-# letter_entry = gets.chomp
-# puts 'Thank you.'
 
 driver = Selenium::WebDriver.for :chrome
 driver.navigate.to "https://app.recurly.com/signup"
@@ -32,17 +29,22 @@ field = ['signup_company', 'signup_first_name', 'signup_last_name',
 
 ## Next Tests:
 ## set the automation iteration values here
-# since blank entry asks only for a single char, do so, in the spirit of TDD
-letter_entry = 's'
-numeric = '6'
+## since blank entry asks only for a single char, do so, in the spirit of TDD
+# letter_entry = 's'
+
+# Future Mod Fix: asking user for a letter to use results in a stale entry error
+puts 'Please enter a letter to use in the submission'
+letter_entry = gets.chomp
+puts 'Thank you.'
+numeric = '7'
 password_vanity_url = letter_entry*8 + numeric
 
 
 # Test Two: populate the letter entry into all the field ids:
-field.each do |x|
-  element = driver.find_element(:id, x)
-  element.send_keys letter_entry
-end
+# field.each do |x|
+#   element = driver.find_element(:id, x)
+#   element.send_keys letter_entry
+# end
 # element.submit
 
 
