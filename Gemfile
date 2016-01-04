@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'selenium-webdriver'
 gem 'chromedriver-helper'
 gem 'rspec'
+gem 'recurly'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
