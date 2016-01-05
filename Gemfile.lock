@@ -257,6 +257,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   launchy
+  minitest
   pg
   quiet_assets
   rails (= 4.2.4)

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>API Tests Assignment page</title>
+</head>
+<body>
+<h1>API Tests Assignment page</h1>
+
+<h3>The chosen registration is
+  <%= params[:vanity_url] %></h3>
+
+<h3>Here is the vanity url:
+  <%= @password_vanity_url %></h3>
+
+
+<h2><a href="<%= @password_vanity_url %>">Go To Registration Login, then to Accounts page</a></h2>
+
+<ul>
+  <li><h3>Here is the email:
+    <% if params[:vanity_url].length >10 %>
+      sue.uyetake<%= params[:vanity_url].last(3) %>@yahoo.com
+
+    <% elsif params[:vanity_url].length >9 %>
+      sue.uyetake<%= params[:vanity_url].last(2) %>@yahoo.com
+
+    <% else %>
+      sue.uyetake<%= params[:vanity_url].last %>@yahoo.com
+    <% end %>
+  </h3></li>
+
+  <li><h3>Here is the password:
+    <%= params[:vanity_url] %>
+  </h3></li>
+
+</ul>
+
+<h4><a href="<%= root_url %>">Go back to index page</a></h4>
+
+
+</body>
+</html>

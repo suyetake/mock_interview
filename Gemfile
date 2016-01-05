@@ -4,6 +4,7 @@ gem 'selenium-webdriver'
 gem 'chromedriver-helper'
 gem 'rspec'
 gem 'recurly'
+gem 'minitest'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
