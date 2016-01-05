@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 gem 'selenium-webdriver'
 gem 'chromedriver-helper'
 gem 'rspec'
-gem 'recurly'
+gem 'recurly', '~> 2.4.9'
 gem 'minitest'
 # this gem could not be found:
 # gem 'rubygems'

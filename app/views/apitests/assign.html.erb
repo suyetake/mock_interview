@@ -14,29 +14,9 @@
   <%= @password_vanity_url %></h3>
 
 
-<h2><a href="<%= @password_vanity_url %>">Go To Registration Login, then to Accounts page</a></h2>
-
-<ul>
-  <li><h3>Here is the email:
-    <% if params[:vanity_url].length >10 %>
-      sue.uyetake<%= params[:vanity_url].last(3) %>@yahoo.com
-
-    <% elsif params[:vanity_url].length >9 %>
-      sue.uyetake<%= params[:vanity_url].last(2) %>@yahoo.com
-
-    <% else %>
-      sue.uyetake<%= params[:vanity_url].last %>@yahoo.com
-    <% end %>
-  </h3></li>
-
-  <li><h3>Here is the password:
-    <%= params[:vanity_url] %>
-  </h3></li>
-
-</ul>
 
 <h3>Execute the account creation API call for this registered user:</h3>
-<h2><a href="./<%= params[:vanity_url] %>/api_create_account"><%= @default_password_vanity %></a></h2>
+<h3>  <a href="./<%= params[:vanity_url] %>/api_create_account"><%= @default_password_vanity %></a></h3>
 
 <h4><a href="<%= root_url %>">Go back to index page</a></h4>
 
