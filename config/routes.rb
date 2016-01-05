@@ -2,7 +2,9 @@ Rails.application.routes.draw do
   root 'apitests#index'
 
   get 'registration/:vanity_url' => 'apitests#assign'
+  get 'registration/:vanity_url/api_create_account' => 'apitests#api_create_account'
 
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

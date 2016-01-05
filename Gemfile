@@ -5,6 +5,8 @@ gem 'chromedriver-helper'
 gem 'rspec'
 gem 'recurly'
 gem 'minitest'
+# this gem could not be found:
+# gem 'rubygems'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
