@@ -172,6 +172,7 @@ GEM
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
     rdoc (4.2.0)
+    recurly (2.4.9)
     rspec (3.4.0)
       rspec-core (~> 3.4.0)
       rspec-expectations (~> 3.4.0)
@@ -256,10 +257,12 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   launchy
+  minitest
   pg
   quiet_assets
   rails (= 4.2.4)
   rails_12factor
+  recurly (~> 2.4.9)
   rspec
   rspec-rails
   sass-rails (~> 5.0)

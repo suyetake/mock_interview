@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>API Tests Assignment page</title>
+</head>
+<body>
+<h1>API Tests Assignment page</h1>
+
+<h3>The chosen registration is
+  <%= params[:vanity_url] %></h3>
+
+<h3>Here is the vanity url:
+  <%= @password_vanity_url %></h3>
+
+
+
+<h3>Execute the account creation API call for this registered user:</h3>
+<h3>  <a href="./<%= params[:vanity_url] %>/api_create_account"><%= @default_password_vanity %></a></h3>
+
+<h4><a href="<%= root_url %>">Go back to index page</a></h4>
+
+
+</body>
+</html>

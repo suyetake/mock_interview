@@ -1,39 +1,25 @@
-# Rails 4.2.4 Recurly API Ruby Demo
+# Selenium Webdriver 2.0 Recurly UI Ruby Demo
 ### Sue Uyetake
 
-This rails app will use Recurly's API 
-and create an account using a registration
-created by the UI selenium tests.
+selenium_webdriver_recurly_UI.rb
 
-> https://ssssssss7.recurly.com
-...
-https://ssssssss15.recurly.com
+This commandline program will navigate to Recurly's
+signup page and make some entries.
 
-> sue.uyetake7@yahoo.com
-...
-sue.uyetake15@yahoo.com
-
-> * Test One: create an account in ssssssss7.recurly.com , validate presence_of
-> * Test Two: 
-> * Test Three: 
-> * Test Four: 
+> * Test One: populate nothing to all field ids and simply submit
+> * Test Two: populate a single letter entry into all the field ids
+> * Test Three: populate the fields needing more than a single letter entry
+> * Test Four: confirm page display with accurate number of accounts
 
 
 Unless the included gemfile is used and bundled,
 first install the following gems at the commandline:
 
 > * gem install rubygems
-> * gem install recurly
 > * gem install selenium-webdriver
 > * gem install chromedriver-helper
 
-
-API INFO: 
-
-
-Selenium INFO: 
-
-The element under test can be found by name or by id..
+INFO: The element under test can be found by name or by id..
 ( input class="Field-input" id="signup_company" name="signup[company]" size="30" type="text" value=" " )
 
 > * element = driver.find_element(:name, 'signup[company]')
