@@ -1,7 +1,9 @@
-# Rails 4.2.4 Recurly API Ruby Demo
+# Rails 4.2.4 Asynchrony Labs Code Demo
 ### Sue Uyetake
 
-This rails app will use Recurly's API 
+This rails app can be played with during Asynchrony Interviews.. 
+
+Right now it will use Recurly's API 
 and create an account using a registration
 created by the UI selenium tests.
 
